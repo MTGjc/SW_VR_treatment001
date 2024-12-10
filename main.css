@@ -37,7 +37,7 @@
 
 .para {
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: normal;
     text-align: left;
     text-decoration : none;
@@ -48,7 +48,7 @@
 
 .char {
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: normal;
     text-align: left;
     text-decoration : none;
