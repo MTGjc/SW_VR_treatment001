@@ -359,7 +359,7 @@
 }
 
 
-#guyu_pov {
+.guyu_pov {
     color: rgb(0, 0, 0);
     font-size: calc(7px + 0.8vw);
     font-weight: bold;
