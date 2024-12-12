@@ -20,6 +20,7 @@
     position: fixed;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    opacity: 70%;
     font-size: calc(24px + 0.8vw);
     font-weight: 800;
     text-align: left;
@@ -262,7 +263,7 @@
 
 .block {
     padding: 20px;
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc;
     margin: 10px 0;
     max-height: 1000px; /* Large enough height for content */
     overflow: hidden;  /* Prevent content from spilling out */
@@ -298,7 +299,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; */
-    box-sizing: border-box;
+    
+    /* box-sizing: border-box;
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: left;
@@ -309,32 +311,17 @@
     margin-bottom: 0px;
     margin-left: 0;
     cursor: pointer;
-    width: 100%;
+    width: 100%; */
+
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1500d6, #484cbd, #e3e3e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-
-
-/* Block 1 and Block 2 styling */
-#block2 {
-    display: none; /* Start with Block 2 hidden */
-    visibility: hidden; /* Ensures it doesn't take up space while hidden */
-    opacity: 0; /* Start with zero opacity */
-    transition: visibility 0s, opacity 0.5s ease-in-out; /* Transition for opacity */
-}
-
-/* Visible state for Block 2 */
-#block2.visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
-}
-
-/* Hidden state for Block 2 */
-#block2.hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
 
 #dong_bet {
@@ -358,8 +345,27 @@
     background-clip: text;
 }
 
+.hyperLink {
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1500d6, #484cbd, #e3e3e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-.guyu_pov {
+.hyperLink_c {
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(90deg, #a6490f, #b16b31, #fcf2e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hyperLink_g {
     color: rgb(0, 0, 0);
     font-size: calc(7px + 0.8vw);
     font-weight: bold;
@@ -367,10 +373,44 @@
     z-index: 1000;
     padding: 0%;
     border: black solid 1px;
-    margin-top: 1px;
+    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0;
     cursor: pointer;
     width: 100%;
 }
 
+
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+.trigAct {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-size: calc(12px + 0.8vw);
+    font-weight: bold;
+    text-align: left;
+    z-index: 1000;
+    padding: 2%;
+    border: black solid 1px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    margin-left: 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ---------------------------------------------- */
+p.collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  p.collapsible.open {
+    max-height: 500px;
+  }

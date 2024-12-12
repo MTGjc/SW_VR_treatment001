@@ -25,9 +25,9 @@ document.getElementById('toggleButton5').addEventListener('click', function(){
     this.textContent = content.classList.contains('expanded') ? 'Act 5 | Return to the Stage' : 'Act 5 | Return to the Stage';
   }
 );
+//-------------------------------------------------------------------------------------------------------//
 
-
-
+//-------------------------------------------------------------------------------------------------------//
 
 
 
@@ -99,3 +99,19 @@ document.getElementById('toggleButton2').addEventListener('click', function(even
       }, 50); // Slight delay before applying animation
   }
 });
+
+
+//-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+  // Smooth scrolling to anchor links
+  document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll("a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function(event) {
+        var href = this.getAttribute("href");
+        var offsetTop = document.querySelector(href).offsetTop;
+        window.scrollTo({top: offsetTop, behavior: "smooth"});
+        event.preventDefault();
+      });
+    }
+  });
